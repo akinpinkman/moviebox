@@ -27,4 +27,6 @@ export class MovieListComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {}
+
+  onClickMovie() {}
 }
