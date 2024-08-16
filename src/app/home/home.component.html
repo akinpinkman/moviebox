@@ -1,4 +1,6 @@
 <div class="container-2xl">
   <app-navbar></app-navbar>
-  <app-movie-list></app-movie-list>
+  <app-movie-list
+    [incomingPopularMoviesTitle]="outgoingPopularMoviesTitle"
+  ></app-movie-list>
 </div>

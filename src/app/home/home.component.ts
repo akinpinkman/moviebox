@@ -7,4 +7,6 @@ import { MovieListComponent } from '../components/movie-list/movie-list.componen
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  outgoingPopularMoviesTitle: string = 'Popular Movies';
+}

@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Movie } from 'src/app/models/movie';
 import { MainService } from 'src/app/services/main.service';
 
@@ -9,6 +9,8 @@ import { MainService } from 'src/app/services/main.service';
 })
 export class MovieListComponent implements OnInit, OnDestroy {
   movies: Movie[] = [];
+
+  @Input() incomingPopularMoviesTitle: string = '';
 
   constructor(private mainService: MainService) {}
 
