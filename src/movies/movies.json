@@ -1,0 +1,92 @@
+{
+  "uuid": "de5dd683-0fd1-4bef-939e-a89f7b0d3847",
+  "lastMigration": 32,
+  "name": "Movies",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "7e53dbcf-72ca-4fcd-bc89-4a12b4877003",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "movies",
+      "responses": [
+        {
+          "uuid": "294e7574-2272-4db0-ad06-f97473c37940",
+          "body": "[\n  {\n    \"movieName\": \"Scarface\",\n    \"moviePoster\": \"https://image.tmdb.org/t/p/w1280/i38osQHLebfwOXA44v7fVOZLtBu.jpg\",\n    \"movieRate\": \"90\"\n  },\n  {\n    \"movieName\": \"Harry Potter\",\n    \"moviePoster\": \"https://www.themoviedb.org/t/p/w1280/6FHO9N5mj5hdgRNYzflgheemIBZ.jpg\",\n    \"movieRate\": \"Rate_for_Harry_Potter\"\n  },\n  {\n    \"movieName\": \"The Godfather\",\n    \"moviePoster\": \"https://www.themoviedb.org/t/p/w1280/vseIVRdN4xasYwStQIi6SI7DcEu.jpg\",\n    \"movieRate\": \"Rate_for_The_Godfather\"\n  },\n  {\n    \"movieName\": \"Schindler's List\",\n    \"moviePoster\": \"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2mOH8EqumIaepdP94e0cy4Xnyg7.jpg\",\n    \"movieRate\": \"Rate_for_Schindlers_List\"\n  },\n  {\n    \"movieName\": \"Fight Club\",\n    \"moviePoster\": \"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yjMuqAyJUoQZGWsZ0vZuYj5inAR.jpg\"\n  },\n  {\n    \"movieName\": \"Goodfellas\",\n    \"moviePoster\": \"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oMPDt1rNLYEVRpigNLaiTnibVn8.jpg\",\n    \"movieRate\": \"Rate_for_Goodfellas\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "7e53dbcf-72ca-4fcd-bc89-4a12b4877003"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
